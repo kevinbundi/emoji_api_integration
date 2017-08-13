@@ -1,0 +1,15 @@
+<!-- <div id="emoji_area">
+	<p>Blush: <img src="<%= @emoji['blush'] %>" alt="emoji"></p>
+	<p>Thumbs Up : <img src='<%= @emoji['+1'] %>' alt='emoji'/></p> 
+</div> -->
+
+<div class="container">
+		<div class="row">
+			<% @emoji.each do |e|  %>
+				<div class="img-thumbnail img-fluid">
+					<img src="<%= e[1] %>">
+					<!-- <p><%= e[0] %></p> -->
+				</div>
+			<% end %>
+		</div>
+</div>  
